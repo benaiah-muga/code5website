@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap, Users, Globe, Lock } from 'lucide-react';
 
 const MotionDiv = motion.div as any;
 
@@ -29,9 +28,6 @@ export const ValueProps: React.FC = () => {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:bg-accent/10 transition-colors duration-500" />
                 <div className="relative z-10 h-full flex flex-col justify-between">
                     <div>
-                        <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-6 text-accent">
-                            <Zap size={24} />
-                        </div>
                         <h3 className="text-3xl font-display font-bold text-white mb-4">End-to-End Solutions</h3>
                         <p className="text-neutral-400 text-lg leading-relaxed max-w-lg">
                             Need LED screens at your launch event AND a website for registrations? One team. One vision. Seamless execution. We eliminate the friction of managing multiple vendors.
@@ -54,7 +50,6 @@ export const ValueProps: React.FC = () => {
             >
                 <div className="flex items-start justify-between mb-4">
                     <h3 className="text-2xl font-display font-bold text-white">Young & Hungry</h3>
-                    <Users className="text-accent-alt" />
                 </div>
                 <p className="text-neutral-400">
                     We bring fresh perspectives, modern tech stacks, and relentless dedication to every project. We're not afraid to challenge the status quo to get better results.
@@ -71,7 +66,6 @@ export const ValueProps: React.FC = () => {
             >
                 <div className="flex items-start justify-between mb-4">
                     <h3 className="text-2xl font-display font-bold text-white">Local First</h3>
-                    <Globe className="text-[#00CCFF]" />
                 </div>
                 <p className="text-neutral-400">
                     Based in Kampala. We know the market. We're not outsourced support in a different time zone — we're your neighbors, ready to be on-site when you need us.
@@ -86,8 +80,7 @@ export const ValueProps: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
             >
-                 <div className="flex flex-col h-full justify-between">
-                    <Lock className="text-white mb-4" />
+                 <div className="flex flex-col h-full justify-end">
                     <div>
                         <h3 className="text-lg font-display font-bold text-white mb-2">Transparent</h3>
                         <p className="text-sm text-neutral-400">No hidden fees. Clear pricing structures.</p>
